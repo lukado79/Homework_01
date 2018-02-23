@@ -26,25 +26,25 @@ public class GenerateRandom {
 		Random ran = new Random();
 		List<Integer> lista = new ArrayList<>();
 		int occur;
-		int value = 0;
+		int val = 0;
 
 		for (int i = 0; i < amount; i++) {
 			for (int a = 0; a < interval; a++) {
-				value = ran.nextInt(interval);
-				lista.add(value);
+				val = ran.nextInt(interval);
+				lista.add(val);
 			}
 
 		}
 		System.out.println(lista.toString());
 
 		for (Integer occ : lista) {
-			for (int j = 0; j < lista.size();) {
+//			for (int j = 0; j < lista.size();) {
 				occur = Collections.frequency(lista, occ);
 				map.put(occ, occur);
 				System.out.println(map.toString());
 				return map;
 
-			}
+//			}
 
 		}
 
@@ -56,9 +56,7 @@ public class GenerateRandom {
 
 	}
 
-	static void List() {
 
-	}
 
 }
 
