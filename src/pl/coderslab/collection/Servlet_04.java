@@ -31,7 +31,7 @@ public class Servlet_04 extends HttpServlet {
 		Iterator<Integer> it = list.iterator();
 		while (it.hasNext()) {
 			Integer num = it.next();
-			response.getWriter().println(num+"<br>");
+			response.getWriter().println(num + "<br>");
 		}
 		response.getWriter().append("<h1>Posortowana lista</h1>" + "<br>");
 		Collections.sort(list);
@@ -40,7 +40,6 @@ public class Servlet_04 extends HttpServlet {
 			Integer num2 = it.next();
 			response.getWriter().println(num2 + "<br>");
 		}
-		
 
 	}
 

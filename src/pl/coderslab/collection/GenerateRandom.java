@@ -38,25 +38,17 @@ public class GenerateRandom {
 		System.out.println(lista.toString());
 
 		for (Integer occ : lista) {
-//			for (int j = 0; j < lista.size();) {
-				occur = Collections.frequency(lista, occ);
-				map.put(occ, occur);
-				System.out.println(map.toString());
-				return map;
 
-//			}
+			occur = Collections.frequency(lista, occ);
+			map.put(occ, occur);
+			System.out.println(map.toString());
+			return map;
 
 		}
 
 		return map;
 
-		// stwórz listę z wylosowanymi liczbami
-		// w pętli for z if sprawdź ile razy wystąpi liczba
-		// dodaj do mapy liczbę jako klucz i liczbę wystąpień jako wartość
-
 	}
-
-
 
 }
 
